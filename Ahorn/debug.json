@@ -1,0 +1,12 @@
+{
+    "DEBUG_MENU_DROPDOWN": false,
+    "IGNORE_MINIMUM_SIZE": false,
+    "ZIP_CACHING_VERBOSE": false,
+    "DISABLE_LOADING_SCREEN": false,
+    "ALWAYS_FORCE_GAME_EXTRACTION": false,
+    "TOOLTIP_ENTITY_MISSING": false,
+    "DRAWING_CANVAS_DRAW_DURATION": false,
+    "TOOLS_SELECTED": false,
+    "ENABLE_HOTSWAP_HOTKEYS": false,
+    "IGNORE_CAN_RESIZE": false
+}

@@ -1,0 +1,58 @@
+Running Ahorn via Olympus.
+┌ Debug: Creating new cache for "/Users/AlexMoore/.local/share/Olympus-Ahorn/julia/share/julia/stdlib/v1.6/Pkg/Project.toml"
+└ @ Base loading.jl:225
+  Activating environment at `~/.local/share/Olympus-Ahorn/ahorn-env/Project.toml`
+┌ Debug: Creating new cache for "/Users/AlexMoore/.local/share/Olympus-Ahorn/ahorn-env/Project.toml"
+└ @ Base loading.jl:225
+┌ Debug: Creating new cache for "/Users/AlexMoore/.local/share/Olympus-Ahorn/ahorn-env/Manifest.toml"
+└ @ Base loading.jl:225
+Using MoreDasheline hair colors for CommunalHelper DreamBlocks.
+Failed to get content of zip file: /Users/AlexMoore/Library/Application Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/Resources/Mods/FemtoHelper.zip
+ArgumentError: Invalid utf8 string: UInt8[]
+Stacktrace:
+  [1] utf8_validate(vec::Vector{UInt8})
+    @ ZipFile ~/.local/share/Olympus-Ahorn/julia-depot/packages/ZipFile/yQ7yx/src/ZipFile.jl:206
+  [2] _getfiles(io::IOStream, diroffset::UInt32, nfiles::UInt16)
+    @ ZipFile ~/.local/share/Olympus-Ahorn/julia-depot/packages/ZipFile/yQ7yx/src/ZipFile.jl:359
+  [3] ZipFile.Reader(io::IOStream, close_io::Bool)
+    @ ZipFile ~/.local/share/Olympus-Ahorn/julia-depot/packages/ZipFile/yQ7yx/src/ZipFile.jl:108
+  [4] Reader
+    @ ~/.local/share/Olympus-Ahorn/julia-depot/packages/ZipFile/yQ7yx/src/ZipFile.jl:120 [inlined]
+  [5] cacheZipContent(filename::String, resourcePrefix::String, ahornPrefix::String, languagePrefix::String)
+    @ Ahorn ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/mods.jl:253
+  [6] cacheZipContent
+    @ ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/mods.jl:245 [inlined]
+  [7] findExternalModulesInZip(filename::String, pluginPath::String, allowRetry::Bool)
+    @ Ahorn ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/mods.jl:419
+  [8] findExternalModulesInZip
+    @ ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/mods.jl:407 [inlined]
+  [9] loadExternalZipModules!(loadedModules::Dict{String, Module}, loadedNames::Vector{String}, args::String)
+    @ Ahorn ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/mods.jl:594
+ [10] initExternalLibraries()
+    @ Ahorn ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/init_external_modules.jl:29
+ [11] initExternalModules
+    @ ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/init_external_modules.jl:40 [inlined]
+ [12] macro expansion
+    @ ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/helpers/gtk_helpers.jl:15 [inlined]
+ [13] displayMainWindow()
+    @ Ahorn ~/.local/share/Olympus-Ahorn/julia-depot/packages/Ahorn/hlYON/src/display_main_window.jl:44
+ [14] top-level scope
+    @ /var/folders/34/vlw1tgm954x7_3c1zpc_35vm0000gp/T/tmp7a43d2ea.tmp:82
+ [15] include(mod::Module, _path::String)
+    @ Base ./Base.jl:386
+ [16] exec_options(opts::Base.JLOptions)
+    @ Base ./client.jl:285
+ [17] _start()
+    @ Base ./client.jl:485
+WARNING: replacing module AnonhelperAnonCloud.
+WARNING: replacing module Watchtower.
+! Failed to load "Ahorn/entities/strawberryJam/BulletTimeController.jl" from "/Users/AlexMoore/Library/Application Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/Resources/Mods/CommunalHelper.zip"
+ErrorException("syntax: optional positional arguments must occur at end around /Users/AlexMoore/.local/share/Olympus-Ahorn/julia-depot/packages/Maple/aZXMC/src/macros.jl:102")
+! Failed to load "Ahorn/entities/Sawblade.jl" from "/Users/AlexMoore/Library/Application Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/Resources/Mods/FlaglinesAndSuch.zip"
+UndefVarError(:entity)
+WARNING: replacing module JackalHelperOneWayJellyBarrierModule.
+! Failed to load "Ahorn/entities/P_CoreBooster.jl" from "/Users/AlexMoore/Library/Application Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/Resources/Mods/TwigHelper.zip"
+UndefVarError(:bool)
+! Failed to load "Ahorn/entities/SizableJelly.jl" from "/Users/AlexMoore/Library/Application Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/Resources/Mods/VivHelper.zip"
+Base.Meta.ParseError("missing comma or ) in argument list")
+WARNING: replacing module VivHelperAnimatedSpikes.
